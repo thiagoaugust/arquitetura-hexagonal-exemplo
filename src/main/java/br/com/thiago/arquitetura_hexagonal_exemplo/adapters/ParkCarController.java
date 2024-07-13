@@ -1,6 +1,7 @@
 package br.com.thiago.arquitetura_hexagonal_exemplo.adapters;
 
 import br.com.thiago.arquitetura_hexagonal_exemplo.domain.ports.ParkCarUseCasePort;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -17,12 +18,14 @@ public class ParkCarController {
     }
 
     @PostMapping("/checkin")
-    public void checkin(@RequestParam String plate){
+    public ResponseEntity<Void> checkin(@RequestParam String plate){
         parkCarUseCasePort.checkin(plate);
+        return ResponseEntity.ok().build();
     }
 
     @PostMapping("/checkout")
-    public void checkout(@RequestParam String plate){
+    public ResponseEntity<Void> checkout(@RequestParam String plate){
         parkCarUseCasePort.checkout(plate);
+        return ResponseEntity.ok().build();
     }
 }
