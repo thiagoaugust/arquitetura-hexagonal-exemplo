@@ -9,7 +9,6 @@ import java.util.List;
 public class ParkCarRepository implements ParkCarRepositoryPort {
 
     private final SpringParkCarRepository repository;
-    private CarEntity carEntity;
 
     public ParkCarRepository(SpringParkCarRepository repository) {
         this.repository = repository;
