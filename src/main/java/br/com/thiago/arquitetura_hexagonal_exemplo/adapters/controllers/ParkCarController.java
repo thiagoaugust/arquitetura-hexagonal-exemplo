@@ -1,4 +1,4 @@
-package br.com.thiago.arquitetura_hexagonal_exemplo.adapters;
+package br.com.thiago.arquitetura_hexagonal_exemplo.adapters.controllers;
 
 import br.com.thiago.arquitetura_hexagonal_exemplo.domain.ports.ParkCarUseCasePort;
 import org.springframework.http.ResponseEntity;

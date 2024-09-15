@@ -1,6 +1,6 @@
 package br.com.thiago.arquitetura_hexagonal_exemplo.config;
 
-import br.com.thiago.arquitetura_hexagonal_exemplo.adapters.ParkCarController;
+import br.com.thiago.arquitetura_hexagonal_exemplo.adapters.controllers.ParkCarController;
 import br.com.thiago.arquitetura_hexagonal_exemplo.adapters.repositories.ParkCarRepository;
 import br.com.thiago.arquitetura_hexagonal_exemplo.adapters.repositories.SpringParkCarRepository;
 import br.com.thiago.arquitetura_hexagonal_exemplo.domain.ports.ParkCarRepositoryPort;
